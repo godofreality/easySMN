@@ -30,7 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 _addon.name     = 'easySMN'
 _addon.author   = 'godofreality'
-_addon.version  = '1.0.0'
+_addon.version  = '1.0.1'
 
 _addon.commands = {'smn'}
 
@@ -139,7 +139,19 @@ windower.send_command('bind APPS UP smn hideLegend')
 			if announce then
 				tellString = 'input /p '..thisbp..' ==>> '..t
 			end
-			windower.send_command('input '..avatars[pet.name][command].com..';'..tellString)
+			if avatars[pet.name][command].bpType == 'Rage' then
+				if windower.ffxi.get_ability_recasts()[173] > 0 then
+					windower.send_command('input /echo BloodPactRage not ready yet.')
+				else
+					windower.send_command('input '..avatars[pet.name][command].com..';'..tellString)
+				end
+			elseif avatars[pet.name][command].bpType == 'Ward' then
+				if windower.ffxi.get_ability_recasts()[174] > 0 then
+					windower.send_command('input /echo BloodPactWard not ready yet.')
+				else
+					windower.send_command('input '..avatars[pet.name][command].com..';'..tellString)
+				end
+			end
 		end
 	end
 
