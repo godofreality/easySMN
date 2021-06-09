@@ -116,9 +116,9 @@ avatars['Ramuh'] = {
 	['bp9']= { name='Lightning Armor',com='/pet "Lightning Armor" <me>',bpType='Ward'},
 	['bp10']= { name='Shock Squall',com='/pet "Shock Squall" <t>',bpType='Ward'},
 	['bpSP']= { name='Judgment Bolt',com='/pet "Judgment Bolt" <t>',bpType='Rage'},
-	['bpmain'] = { name='Thunderstorm',com='/pet "Thunderstorm" <t>',bpType='Rage'},
+	['bpmain'] = { name='Volt Strike',com='/pet "Volt Strike" <t>',bpType='Rage'},
 	['bpma'] = { name='Thunder IV',com='/pet "Thunder IV" <t>',bpType='Rage'},
-	['bpmerit'] = { name='Volt Strike',com='/pet "Volt Strike" <t>',bpType='Rage'},
+	['bpmerit'] = { name='Thunderstorm',com='/pet "Thunderstorm" <t>',bpType='Rage'},
 }
 avatars['Fenrir'] = { 
 	['bp1']= { name='Moonlit Charge',com='/pet "Moonlit Charge" <t>',bpType='Rage'},
